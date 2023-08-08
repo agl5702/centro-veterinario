@@ -1,156 +1,135 @@
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-body {
-    background-color: rgb(255, 255, 255);
-    background-image: url(/img/fondo1.jpg);
-    max-width: 100%;
-    max-height: 100%;
+body{
+    background-image: url(../img/fondo1.jpg);
 }
-
-.cuadro1 {
-    background-color: rgb(115, 187, 201);
-    height: 100px;
-    max-width: 100%;
-    min-width: 1024px;
-}
-
-.cuadro1 h1 {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    color: rgba(0, 0, 0, 0.5);
-    margin-left: 180px;
-    font-size: 40px;
-    margin-top: 0;
-}
-
-.cuadro1 h1 span {
-    color: rgba(6, 84, 33, 0.828);
-}
-
-.cuadro1 .texto2 {
-    font-size: 64px;
-    font-style: italic;
-    text-align: left;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 400px;
-    margin-top: -100px;
-}
-
-.cuadro2 {
+header{
+    background: #C2DEDC;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-left: 600px;
-    background-color: rgb(193, 230, 209);
-    width: 300px;
-    height: 530px;
-    border-radius: 20px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
-
-.texto3 {
-    text-align: center;
-    background-color: rgb(115, 187, 201);
-    border-radius: 20px 20px 0px 0px;
-}
-
-.texto3 h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.8);
-}
-.menu2 a{
-    display: inline-block;
-    margin: 50px 10px;
+.contenedor .texto_principal{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgba(6, 84, 33, 0.828);
-    cursor: pointer;
-    font-size: 26px;
+    color: #49ad76;
 }
-.formulario1 input {
+.logo{
+    order: 1;
+    margin: 20px;
+    padding: 20px;
+}
+
+.texto_principal{
+    order: 2;
+}
+.texto_principal h1{
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 25px 300px 0px 0px;
+    padding: 20px;
+}
+.texto_principal h1 span{
+    font-style: italic;
+    color: #196548;
+}
+.gif{
+    order: 4;
+}
+.gif img{
+    width: 150px;
+}
+.texto2{
+    font-style: italic;
+    font-size: 30px;
+    padding: 20px;
+    margin: 25px 300px 0px 0px ;
+    order: 3;
+    color: #967E76;
+}
+.video1{
+    font-size: 20px;
+    margin: 25px;
+    padding: 25px;
+    color: #000;
+    font-style: italic;
+}
+.video1 video{
+    width: 500px;
+    box-shadow: 8px 8px rgba(0,0,0,.4);
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.titulo3{
+    background: #58c8ca;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+.formulario .titulo3 h1{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    color: #000;
+    justify-items: center;
+}
+.formulario{
+    margin: 50px;
+    border-radius: 20px;
+    width: 400px;
+    height: 650px;
+    background: #d1ebeb;
     display: block;
     justify-content: center;
-    /* Alineación horizontal */
-    align-items: center;
-    /* Alineación vertical */
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario label{
+    width: 90%;
+    margin: 10px ;
+    padding: 10px;
+    display: flex;
+}
+.formulario input{
+    width: 90%;
+    background: transparent;
+    margin: 10px ;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    border: transparent;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid rgba(0,0,0,.4);
     border-radius: 5px;
-    box-sizing: border-box;
-    background-color: transparent;
-    height: 20px;
-    margin: 2px;
+}
+input[type=submit]{
+    cursor: pointer;
+    width: 80px;
+    background: #58c8ca;
+    border-radius: 5px;
+    box-shadow: 4px 4px rgba(0,0,0,0.5) ;
     text-align: center;
-    margin-left: 10px;
 }
-
-.img1 {
-    margin-left: 850px;
-    margin-top: -100px;
-}
-
-.formulario1 label {
-    margin-left: 10px;
-}
-
-.video {
-    text-align: center;
-    margin-left: 50px;
-    margin-top: -500px;
-    position: absolute;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgba(0, 0, 0, 0.8);
-}
-
-.video h2 {
-    font-size: 34px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.desarrollo {
+.parrafo1{
+    width: 600px;
+    font-size: 20px;
     text-align: justify;
-    width: 530px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.desarrollo h2 {
-    margin-left: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.parrafo1 p{
+    margin: 10px;
+    padding: 20px;
 }
-
-.desarrollo pre {
-    font-size: 15px;
-    color: black;
-}
-
-.perro2 {
-    background-image: url(/img/DreamShaper_v5_dog_7.jpg);
-    box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
-    width: 207px;
-    height: 211px;
-    position: absolute;
-    margin-left: 500px;
-    margin-top: -450px;
-    border-radius: 20px;
-}
-
-.logo1 {
-    position: absolute;
-    background-image: url(/img/logo1.png);
-    width: 143px;
-    height: 143px;
-    margin-top: -1220px;
-}
-
-.pie-pagina {
-    background-color: rgba(115, 187, 201, 0.5);
-    position: relative;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    max-width: auto;
-    min-width: 1024px;
-}
-
-.btn {
-    margin-left: 10px;
-    margin-top: 20px;
+.imgparrafo img{
+    width: 100px;
 }
